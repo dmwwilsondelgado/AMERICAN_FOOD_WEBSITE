@@ -1,0 +1,71 @@
+.burguerCard {
+  background-color: var(--BLANCO_PURO);
+}
+
+.card-hamburguesa__imagen {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  padding: 20px;
+}
+
+.burguerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burguer-card__contenido {
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+
+/*chat*/
+.card-hamburguesa {
+  width: 300px;
+  border: 1px solid var(--BLANCO_BORDES);
+  border-radius: 8px;
+  overflow: hidden;
+
+  font-family: Arial, sans-serif;
+}
+.card-burguer__button {
+  display: flex;
+  padding: 10px 16px;
+  background-color: var(--ROJO_BUTONN);
+  color: var(--BLANCO_PURO);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 1px;
+  transition: background-color 0.3s;
+  border: none;
+  justify-content: center;
+  align-content: center;
+  margin: 50px 140px;
+}
+.card-burguer__button:hover {
+  background-color: var(--rojo_button_gris);
+}
+
+.card-burguer__titulo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--GRIS_TITULOS);
+  margin: 8px 0;
+  align-items: center;
+  font-family: "Saira Condensed", sans-serif;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.card-burguer__descripcion {
+  font-size: 1rem;
+  color: var(--GRIS_OPACO);
+  margin-bottom: 12px;
+}
+
+/* ---------------------------------  */
