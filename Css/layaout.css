@@ -1,27 +1,19 @@
 .layout {
   height: 100vh;
-  /*width: 1900px;*/
   background-color: var(--pagina_fondo);
 }
 
-/* ---- header  */
+
 
 .header {
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* padding: 20px; */
-  /* padding: 10; */
+
 }
 .header__container {
   margin-bottom: 150px;
   margin-top: 20px;
 }
 
-.header__logo {
-  /* display: flex;
-  align-items: center; */
-}
 .header__left {
   margin-right: 950px; /*  para lo de expre */
 }
@@ -29,10 +21,6 @@
 .header__logo-img {
   width: 35%;
   margin-left: 50px;
-}
-/* ------  */
-.header__express {
-  /* nada  */
 }
 
 .header__express {
@@ -83,7 +71,6 @@
 
 .header__nav-link {
   text-decoration: none;
-  /* font-family: "Passion One", sans-serif; */
   color: #333;
   font-weight: bold;
   font-size: 1rem;
@@ -144,9 +131,6 @@
   color: #3b1900;
   margin-left: 50px;
   line-height: 1;
-  /* width: 100%; */
-  /* padding: 0; */
-  /* margin: 0; */
 }
 .promo__title-main {
   text-shadow: 0px 5px 0px var(--TIRANDO_A_BLANCO);
@@ -184,7 +168,6 @@
   z-index: 5;
   border-top: 50px;
   padding: 10px;
-  /*border-image: linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #ffffff 75%, transparent 75%, transparent) 1;*/
   border-width: 2px;
 }
 
@@ -194,22 +177,6 @@
   width: 130px;
   border-radius: 50%;
 }
-/*.circle::before{
-  border-style: dotted;
-  position: absolute;
-  content: '';
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
-  border:1px solid #fff;
-  background: repeating-conic-gradient(white 0% 10%  transparent 10% 20% ) ;
-  box-sizing: border-box;
-  z-index: -1;
-}
-*/
-/*.circle::after{
-}
-*/
 
 .promo__price-text {
   position: relative;
@@ -232,7 +199,7 @@
   margin-left: 30px;
 }
 
-/*---------------Imagnes Page -----------------------------------*/
+/*---------------Imagnes Page -------------------------------*/
 
 .promo_publicidad-imgBurguer {
   position: relative;
@@ -254,7 +221,6 @@
 
 .promo__publicidadBurguer::before {
   top: -20px;
-  box-shadow: 0 -4px 15px var(--SOMBRA_NEGRA); /* Sombra en la parte superior */
 }
 
 .promo__publicidadCola {
@@ -266,7 +232,6 @@
   transform: translate;
   width: 200px;
   z-index: 2;
-  /* display: none; */
 }
 
 .promo__publicidadCola::before {
@@ -283,7 +248,6 @@
   width: 300px;
   z-index: 1;
   transform: rotate(320deg);
-  /* display: none; */
 }
 
 .promo__publicidadPapitas::before {
