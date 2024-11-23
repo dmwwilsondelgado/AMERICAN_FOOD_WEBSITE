@@ -7,17 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: "Bebas Neue", sans-serif; */
 
-/*
+
 @import url(Css/promotion.css);
+
 @import url(Css/Variables.css);
 @import url(Css/layaout.css);
 @import url(Css/burguer.css);
 /* @import url(Css/reservation.css); */
-/*
+
 @import url(Css/reservationA.css);
 @import url(Css/events.css);
 @import url(Css/info.css);
-*/
 
 
 .dm-serif-text-regular {
@@ -134,140 +134,6 @@ body{
         padding: 20px;
         font-size: smaller;
     }
-    .promo__title-week{
-        
-    }
-    /*
-   .circle{
-    height: 1px;
-    width: 1px;
-    background-color: var(--ROJO);
-    border-radius: 50%;
-    margin-right: 820px;
-    position: absolute;
-    right: 0;
-    transform: translate;
-    z-index: ;
-    border-top: 50px;
-    padding: 10px;
-    border-width: 2px;
-    }
-  
-  .circle__rayas {
-    border: 5px dashed var(--BLANCO_PURO);
-    height: 13px;
-    width: 13px;
-    border-radius: 50%;
-  }
-  .promo__price-text {
-    position: relative;
-    margin-left: 30px;
-    font-size: 2.9rem;
-    font-weight: bold;
-    font-family: "Anton", sans-serif;
-    color: var(--BLANCO_PURO);
-  }
-  .promo__price-text2 {
-    font-size: 1.5rem;
-    font-family: "Anton", sans-serif;
-    color: var(--BLANCO_PURO);
-  }
-  
-  .promo__price-subtext {
-    font-size: 1.9rem;
-    font-family: "Anton", sans-serif;
-    color: var(--BLANCO_PURO);
-    margin-left: 30px;
-  }
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* Promoción de productos */
     .promotion__container {
         display: flex;
@@ -452,4 +318,9 @@ body{
     .info__hamburguer p {
         width: 100%;
     }
+}
+
+
+@media(min-width:1124px){
+    
 }
