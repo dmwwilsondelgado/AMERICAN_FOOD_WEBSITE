@@ -3,6 +3,7 @@
   background-color: var(--pagina_fondo);
   display: grid;
   grid-template-rows: auto 1fr;
+  height: 100vh;
 }
 
 .header {
@@ -142,31 +143,52 @@
 .promo__price-text {
   font-size: 2.9rem;
 }
-
 .promo__price-text2 {
   font-size: 1.5rem;
 }
-
 .promo__price-subtext {
   font-size: 1.9rem;
 }
-
+/*
 .promo_publicidad-imgBurguer {
-  grid-column: 2;
+  grid-column: 6;
   position: relative;
-  display: inline-flex;
+  display: grid;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+*/
+.promo_publicidad-imgBurguer {
+  grid-column: 2; /* Coloca este contenedor en la segunda columna */
+  display: grid; /* Usa grid para un mejor control sobre los hijos */
+  gap: 10px;
+  justify-content: flex-endend;
+}
 
+/* Mover imágenes específicas a la segunda columna */
+.promo__publicidadBurguer {
+  grid-column: 2; /* Mueve esta imagen a la segunda columna */
+}
+
+.promo__publicidadCola {
+  grid-column: 2; /* Mueve esta imagen a la segunda columna */
+}
+
+.promo__publicidadPapitas {
+  grid-column: 1; /* Mantiene esta imagen en la primera columna */
+}
+.item:nth-child(1) {
+  grid-column: 2; /* Mueve la primera imagen a la segunda columna */
+}
 .promo__publicidadBurguer,
 .promo__publicidadCola,
 .promo__publicidadPapitas {
-  max-width: 20%;
+  max-width: 40%;
   height: auto;
   margin: 10px;
 }
+
 
 /* Media Queries */
 
