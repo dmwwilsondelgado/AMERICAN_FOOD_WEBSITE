@@ -1,36 +1,51 @@
+/*:root {
+  --pagina_fondo: #f5a623;
+  --BLANCO_PURO: #ffffff;
+  --GRIS_TITULOS: #333333;
+  --MARRON_OSCURO_PALIDO: #3b1900;
+  --GRIS_SOMBRA: #cccccc;
+  --TIRANDO_A_BLANCO: #eaeaea;
+  --ROJO: #d0021b;
+  --SOLO_NEGRO: #000000;
+}
+*/
+
+
 .layout {
   height: 100vh;
   background-color: var(--pagina_fondo);
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
-
-
 
 .header {
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
 }
+
 .header__container {
-  margin-bottom: 150px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 50px;
 }
 
-.header__left {
-  margin-right: 950px; /*  para lo de expre */
+.header__left,
+.header__express,
+.header__right {
+  display: flex;
+  align-items: center;
 }
 
 .header__logo-img {
-  width: 35%;
-  margin-left: 50px;
+  width: 150px;
 }
 
 .header__express {
-  display: flex;
-  align-self: flex-start;
-  margin-top: -30px;
   font-family: "Passion One", sans-serif;
   font-size: 10px;
-  align-items: center;
-  margin-bottom: 10px;
 }
 
 .header__express-icon {
@@ -44,25 +59,7 @@
   color: var(--GRIS_TITULOS);
 }
 
-.header__rignt {
-  display: flex;
-  margin-left: auto;
-  margin-bottom: 10px;
-}
-
-.header__nav {
-  display: flex;
-  margin-left: auto;
-  list-style: none;
-  gap: 20px;
-  margin-left: 100px;
-}
-.header__nav-item {
-  text-transform: uppercase;
-}
-
 .header__nav-list {
-  margin-left: auto;
   display: flex;
   gap: 20px;
   list-style: none;
@@ -71,185 +68,208 @@
 
 .header__nav-link {
   text-decoration: none;
-  color: #333;
+  color: var(--SOLO_NEGRO);
   font-weight: bold;
   font-size: 1rem;
   margin: 10px;
 }
 
-.header__nav-link {
-  color: var(--SOLO_NEGRO);
-  text-decoration: none;
+.promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 50px;
+  text-align: center;
 }
 
-.header__express-link {
-  margin-left: auto;
-}
-
-/* Estilos de la promoción */
 .promo__slogan {
-  display: inline-block;
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .promo__slogan-text {
   font-size: 1.5rem;
   color: var(--MARRON_OSCURO_PALIDO);
   margin-bottom: 10px;
-  padding: 0;
-  margin-left: 50px;
   padding: 10px;
   border: solid 1px var(--GRIS_SOMBRA);
-  border-image: linear-gradient(
-      135deg,
-      var(--MARRON_OSCURO_PALIDO) 25%,
-      transparent 25%,
-      transparent 50%,
-      var(--MARRON_OSCURO_PALIDO) 50%,
-      var(--MARRON_OSCURO_PALIDO) 75%,
-      transparent 75%,
-      transparent
-    )
-    1;
   border-radius: 5px;
-  border-width: 2px; /* Grosor del borde */
-  border-style: solid; /* Necesario para border-image */
+  border-width: 2px;
+  border-style: solid;
   border-image: repeating-linear-gradient(
       135deg,
       var(--MARRON_OSCURO_PALIDO),
       var(--MARRON_OSCURO_PALIDO) 10px,
-      /* color hasta 10px */ transparent 10px,
-      transparent 20px /* espacio transparente hasta 20px */
-    )
-    1; /* Cambia '1' por el número de veces que quieras repetir el patrón */
+      transparent 10px,
+      transparent 20px
+  ) 1;
 }
 
-.promo__title-main {
-  font-family: "Anton", sans-serif;
-  font-weight: 10;
-  font-style: normal;
-  font-size: 13rem;
-  color: #3b1900;
-  margin-left: 50px;
-  line-height: 1;
-}
-.promo__title-main {
-  text-shadow: 0px 5px 0px var(--TIRANDO_A_BLANCO);
-}
-
-.promo__title-main {
-  transform: translate;
-  z-index: 1;
-}
+.promo__title-main,
 .promo__title-week {
   font-family: "Anton", sans-serif;
+  color: #3b1900;
+  margin: 0;
+}
+
+.promo__title-main {
+  font-size: 10rem;
+}
+
+.promo__title-week {
   font-size: 5rem;
-  color: #3b1900;
-  margin-top: 0px;
-  /* font-size: 5rem; */
-  margin-left: 50px;
-  z-index: 1;
 }
-.promo__title-week {
-  text-shadow: 0px 5px 0px var(--TIRANDO_A_BLANCO);
-  z-index: -1;
-}
-
-/*-------- creacion de circulo  */
 
 .circle {
   height: 150px;
   width: 150px;
   background-color: var(--ROJO);
   border-radius: 50%;
-  margin-right: 820px;
-  position: absolute;
-  right: 0;
-  transform: translate;
-  z-index: 5;
-  border-top: 50px;
-  padding: 10px;
-  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .circle__rayas {
-  border: 5px dashed var(--BLANCO_PURO);
   height: 130px;
   width: 130px;
   border-radius: 50%;
+  border: 5px dashed var(--BLANCO_PURO);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.promo__price-text,
+.promo__price-text2,
+.promo__price-subtext {
+  font-family: "Anton", sans-serif;
+  color: var(--BLANCO_PURO);
 }
 
 .promo__price-text {
-  position: relative;
-  margin-left: 30px;
   font-size: 2.9rem;
-  font-weight: bold;
-  font-family: "Anton", sans-serif;
-  color: var(--BLANCO_PURO);
 }
+
 .promo__price-text2 {
   font-size: 1.5rem;
-  font-family: "Anton", sans-serif;
-  color: var(--BLANCO_PURO);
 }
 
 .promo__price-subtext {
   font-size: 1.9rem;
-  font-family: "Anton", sans-serif;
-  color: var(--BLANCO_PURO);
-  margin-left: 30px;
 }
-
-/*---------------Imagnes Page -------------------------------*/
 
 .promo_publicidad-imgBurguer {
   position: relative;
-  /* display: block; */
-  box-shadow: 0 -4px 1000px var(--BLANCO_PURO);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.promo__publicidadBurguer {
-  width: 500px;
-  margin-top: -300px;
-  margin-right: 390px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate;
-  z-index: 3;
-  border-top: 50px;
-}
-
-.promo__publicidadBurguer::before {
-  top: -20px;
-}
-
-.promo__publicidadCola {
-  margin-top: -440px;
-  margin-right: 350px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate;
-  width: 200px;
-  z-index: 2;
-}
-
-.promo__publicidadCola::before {
-  top: -20px;
-}
-
+.promo__publicidadBurguer,
+.promo__publicidadCola,
 .promo__publicidadPapitas {
-  margin-top: -400px;
-  margin-right: 730px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate;
-  width: 300px;
-  z-index: 1;
-  transform: rotate(320deg);
+  max-width: 10%;
+  height: auto;
+  margin: 10px;
 }
 
-.promo__publicidadPapitas::before {
-  top: -20px;
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .header__container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+  }
+
+  .header__left {
+      margin-bottom: 20px;
+  }
+
+  .promo {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .promo__title-main {
+      font-size: 6rem;
+  }
+
+  .promo__title-week {
+      font-size: 3rem;
+  }
+
+  .circle {
+      height: 100px;
+      width: 100px;
+  }
+
+  .circle__rayas {
+      height: 80px;
+      width: 80px;
+  }
+
+  .promo__price-text {
+      font-size: 2rem;
+  }
+
+  .promo__price-text2 {
+      font-size: 1rem;
+  }
+
+  .promo__price-subtext {
+      font-size: 1.2rem;
+  }
+
+  .promo_publicidad-imgBurguer {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+      padding: 10px;
+  }
+
+  .promo__title-main {
+      font-size: 4rem;
+  }
+
+  .promo__title-week {
+      font-size: 2rem;
+  }
+
+  .circle {
+      height: 80px;
+      width: 80px;
+  }
+
+  .circle__rayas {
+      height: 60px;
+      width: 60px;
+  }
+
+  .promo__price-text {
+      font-size: 1.5rem;
+  }
+
+  .promo__price-text2 {
+      font-size: 0.8rem;
+  }
+
+  .promo__price-subtext {
+      font-size: 1rem;
+  }
+
+  .promo_publicidad-imgBurguer {
+      flex-direction: column;
+      align-items: center;
+  }
 }
