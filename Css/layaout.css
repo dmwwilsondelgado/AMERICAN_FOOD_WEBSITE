@@ -1,18 +1,5 @@
-/*:root {
-  --pagina_fondo: #f5a623;
-  --BLANCO_PURO: #ffffff;
-  --GRIS_TITULOS: #333333;
-  --MARRON_OSCURO_PALIDO: #3b1900;
-  --GRIS_SOMBRA: #cccccc;
-  --TIRANDO_A_BLANCO: #eaeaea;
-  --ROJO: #d0021b;
-  --SOLO_NEGRO: #000000;
-}
-*/
-
 
 .layout {
-  height: 100vh;
   background-color: var(--pagina_fondo);
   display: grid;
   grid-template-rows: auto 1fr;
@@ -40,7 +27,7 @@
 }
 
 .header__logo-img {
-  width: 150px;
+  width: 300px;
 }
 
 .header__express {
@@ -106,20 +93,22 @@
   ) 1;
 }
 
-.promo__title-main,
-.promo__title-week {
+.promo__title-main {
   font-family: "Anton", sans-serif;
   color: #3b1900;
   margin: 0;
-}
-
-.promo__title-main {
   font-size: 10rem;
 }
 
 .promo__title-week {
   font-size: 5rem;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  color: #3b1900;
+  margin: 0;
 }
+
+
 
 .circle {
   height: 150px;
@@ -163,18 +152,18 @@
 }
 
 .promo_publicidad-imgBurguer {
+  grid-column: 2;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .promo__publicidadBurguer,
 .promo__publicidadCola,
 .promo__publicidadPapitas {
-  max-width: 10%;
+  max-width: 20%;
   height: auto;
   margin: 10px;
 }
@@ -272,4 +261,12 @@
       flex-direction: column;
       align-items: center;
   }
+  .promo__publicidadBurguer,
+  .promo__publicidadCola,
+  .promo__publicidadPapitas {
+  max-width: 10%;
+  height: auto;
+  margin: 10px;
+  }
+  
 }

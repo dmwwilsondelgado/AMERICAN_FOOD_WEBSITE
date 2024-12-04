@@ -8,7 +8,7 @@
 
 @import url(Css/promotion.css);
 @import url(Css/Variables.css);
-@import url(Css/layaout.cs);
+@import url(Css/layaout.css);
 @import url(Css/burguer.css);
 @import url(Css/reservationA.css);
 @import url(Css/events.css);
@@ -30,6 +30,10 @@ body{
     overflow-y: hidden;
     flex-direction: column;
 }
+
+
+
+@import url(Css2/layaout.csss);
 /*
 .content{
     display: flex;
