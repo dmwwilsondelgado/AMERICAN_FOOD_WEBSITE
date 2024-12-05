@@ -301,8 +301,6 @@
       justify-content: center;
       align-items: center;
   }
-  .promo__price{
-  }
   .circle {
     height: 80px;
     width: 80px;
@@ -354,5 +352,4 @@
     left: -30px;
     margin-top: -210px;
   }
-  
 }
