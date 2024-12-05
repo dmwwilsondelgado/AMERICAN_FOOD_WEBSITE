@@ -139,26 +139,3 @@
 }
 
 /* Media queries para diferentes tamaños de pantalla */
-@media (max-width: 1024px) {
-  .burguerCard {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  .card-hamburguesa__imagen {
-    max-width: 300px;
-    max-height: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .burguerCard {
-    grid-template-columns: 1fr;
-  }
-
-  .card-hamburguesa__imagen {
-    margin-left: 65px;
-    max-width: 250px;
-    max-height: 200px;
-  }
-}
