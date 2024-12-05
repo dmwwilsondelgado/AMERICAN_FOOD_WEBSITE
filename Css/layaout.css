@@ -108,29 +108,32 @@
   color: #3b1900;
   margin: 0;
 }
-
-
+.promo__title-week {
+  text-shadow: 0px 5px 0px var(--TIRANDO_A_BLANCO);
+  z-index: -1;
+}
 
 .circle {
+  margin-top: 11%;
   height: 150px;
   width: 150px;
   background-color: var(--ROJO);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  margin-right: 720px;
+  position: absolute;
+  right: 0;
+  transform: translate;
+  z-index: 5;
+  border-top: 50px;
+  padding: 10px;
+  border-width: 2px;
 }
 
 .circle__rayas {
+  border: 5px dashed var(--BLANCO_PURO);
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  border: 5px dashed var(--BLANCO_PURO);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .promo__price-text,
@@ -149,48 +152,60 @@
 .promo__price-subtext {
   font-size: 1.9rem;
 }
-/*
+
+
 .promo_publicidad-imgBurguer {
-  grid-column: 6;
+  margin-top: 200px;
   position: relative;
-  display: grid;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-*/
-.promo_publicidad-imgBurguer {
-  grid-column: 2; /* Coloca este contenedor en la segunda columna */
-  display: grid; /* Usa grid para un mejor control sobre los hijos */
-  gap: 10px;
-  justify-content: flex-endend;
+  box-shadow: 0 -4px 1000px var(--BLANCO_PURO);
 }
 
-/* Mover imágenes específicas a la segunda columna */
 .promo__publicidadBurguer {
-  grid-column: 2; /* Mueve esta imagen a la segunda columna */
+  width: 500px;
+  margin-top: -300px;
+  margin-right: -200px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate;
+  z-index: 3;
+
+  border-top: 50px;
+}
+
+.promo__publicidadBurguer::before {
+  top: -20px;
 }
 
 .promo__publicidadCola {
-  grid-column: 2; /* Mueve esta imagen a la segunda columna */
+  margin-top: -440px;
+  margin-right: -200px;
+  position: absolute;
+  margin-left:-20px;
+  right: 0;
+  top: 50%;
+  transform: translate;
+  width: 200px;
+  z-index: 2;
+
 }
 
 .promo__publicidadPapitas {
-  grid-column: 1; /* Mantiene esta imagen en la primera columna */
-}
-.item:nth-child(1) {
-  grid-column: 2; /* Mueve la primera imagen a la segunda columna */
-}
-.promo__publicidadBurguer,
-.promo__publicidadCola,
-.promo__publicidadPapitas {
-  max-width: 40%;
-  height: auto;
-  margin: 10px;
+  margin-top: -400px;
+  margin-right: 130px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate;
+  width: 300px;
+  z-index: 1;
+  transform: rotate(320deg);
 }
 
+.promo__publicidadPapitas::before {
+  top: -20px;
+}
 
-/* Media Queries */
 
 @media (max-width: 768px) {
   .header__container {
