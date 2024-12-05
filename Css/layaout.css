@@ -60,6 +60,7 @@
   font-weight: bold;
   font-size: 1rem;
   margin: 10px;
+  text-transform: uppercase;
 }
 
 .promo {
@@ -127,33 +128,21 @@
   text-shadow: 0px 5px 0px var(--TIRANDO_A_BLANCO);
   z-index: -1;
 }
-/*
-.promo__title-main {
-  font-family: "Anton", sans-serif;
-  color: #3b1900;
-  margin: 0;
-  font-size: 10rem;
+
+.promo__price{
+  position: absolute;
+  margin-top: 200px;
+  margin-right: 110px;
 }
 
-.promo__title-week {
-  font-size: 5rem;
-  margin: 0;
-  font-family: "Anton", sans-serif;
-  color: #3b1900;
-  margin: 0;
-}
-
-*/
 .circle {
-  margin-top: 11%;
   height: 150px;
   width: 150px;
   background-color: var(--ROJO);
   border-radius: 50%;
   margin-right: 90px;
-  display: flex;
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 130px;
   transform: translate;
   z-index: 5;
   border-top: 50px;
@@ -174,15 +163,16 @@
   font-family: "Anton", sans-serif;
   color: var(--BLANCO_PURO);
 }
-
 .promo__price-text {
   font-size: 2.9rem;
+  padding-left: 20px;
 }
 .promo__price-text2 {
   font-size: 1.5rem;
 }
 .promo__price-subtext {
   font-size: 1.9rem;
+  padding-left: 30px;
 }
 
 
@@ -201,7 +191,6 @@
   top: 50%;
   transform: translate;
   z-index: 3;
-
   border-top: 50px;
 }
 
@@ -243,29 +232,36 @@
   .header__container {
       flex-direction: column;
       align-items: flex-start;
-      padding: 10px 20px;
+   
   }
 
   .header__left {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
   }
 
   .promo {
       grid-template-columns: 1fr;
-      text-align: center;
+      text-align: start;
+      align-items: flex-start;
+      margin: 0;
+  }
+  .header__nav-list{
+    display: inline-block;
+
   }
 
   .promo__title-main {
-      font-size: 6rem;
+      font-size: 5rem;
   }
 
   .promo__title-week {
       font-size: 3rem;
+      align-items: center;
   }
 
   .circle {
-      height: 100px;
-      width: 100px;
+    height: 100px;
+    width: 100px;
   }
 
   .circle__rayas {
@@ -302,16 +298,20 @@
 
   .promo__title-week {
       font-size: 2rem;
+      justify-content: center;
+      align-items: center;
   }
-
+  .promo__price{
+  }
   .circle {
-      height: 80px;
-      width: 80px;
+    height: 80px;
+    width: 80px;
+    right: -150px;
+    top: -100px;
   }
-
   .circle__rayas {
-      height: 60px;
-      width: 60px;
+    height: 60px;
+    width: 60px;
   }
 
   .promo__price-text {
@@ -319,23 +319,40 @@
   }
 
   .promo__price-text2 {
-      font-size: 0.8rem;
+      font-size: 0.15rem;
   }
 
   .promo__price-subtext {
       font-size: 1rem;
+      align-items: center;
+      margin-top: -10px;
+      padding: 10px;
   }
 
   .promo_publicidad-imgBurguer {
-      flex-direction: column;
-      align-items: center;
+    align-items: start;
+    width: 100px;
   }
-  .promo__publicidadBurguer,
-  .promo__publicidadCola,
+  .promo__publicidadBurguer {
+    width: 150px;
+    right: 10px;
+    left: 20px;
+    margin-right: 10%;
+    margin-top: -200%;
+  }
+
+  .promo__publicidadCola {
+    margin-left: 50px;
+    margin-top: -300%;
+    width: 75px;
+    right: 120px;
+    align-items: center;
+
+  }
   .promo__publicidadPapitas {
-  max-width: 10%;
-  height: auto;
-  margin: 10px;
+    width: 92px;
+    left: -30px;
+    margin-top: -210px;
   }
   
 }
