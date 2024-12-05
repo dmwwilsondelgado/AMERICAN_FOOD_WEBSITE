@@ -3,10 +3,15 @@
 }
 
 .card-hamburguesa__imagen {
-  width: 400px;
+  width: 500px;
   height: 400px;
+  justify-content: center;
   align-items: center;
   padding: 20px;
+}
+.burguer-card__imgcontent{
+  justify-content: center;
+  align-items: center;
 }
 
 .burguerCard {
@@ -98,6 +103,7 @@
 }
 
 .card-burguer__button {
+  display: flex;
   padding: 10px 16px;
   background-color: var(--ROJO_BUTONN);
   color: var(--BLANCO_PURO);
@@ -109,8 +115,7 @@
   border: none;
   justify-content: center;
   align-content: center;
-  margin: 20px 0;
-  cursor: pointer;
+  margin: 50px 140px;
 }
 .card-burguer__button:hover {
   background-color: var(--rojo_button_gris);
@@ -137,6 +142,7 @@
 @media (max-width: 1024px) {
   .burguerCard {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 
   .card-hamburguesa__imagen {
@@ -151,7 +157,8 @@
   }
 
   .card-hamburguesa__imagen {
-    max-width: 200px;
+    margin-left: 65px;
+    max-width: 250px;
     max-height: 200px;
   }
 }
