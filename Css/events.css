@@ -1,6 +1,5 @@
 .subcontent__events {
   display: flex;
-  /* width: 900px; */
   justify-content: center;
   align-items: center;
   margin: 40px;
@@ -30,9 +29,7 @@
   padding: 5px;
   font-size: 20px;
 }
-.events__image {
-  /* width: 100%; */
-}
+
 .image__burger {
   width: 700px;
   margin: 20px;
@@ -40,8 +37,51 @@
 .content__circulos {
   height: 10px;
   width: 10px;
-  /* border: 2px solid #fff; */
+
   border-radius: 50% var(--PAGE__1);
   position: relative;
   z-index: 4;
+}
+
+
+
+/* Para pantallas grandes (por ejemplo, de escritorio) */
+@media (min-width: 1024px) {
+  .image__burger {
+    width: 700px; /* Se mantiene el tamaño original en pantallas grandes */
+  }
+}
+
+/* Para tabletas (pantallas medianas) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .image__burger {
+    width: 80%; /* Reducción del tamaño de la imagen para pantallas más pequeñas */
+    max-width: 600px;
+  }
+}
+
+/* Para móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+  .image__burger {
+    width: 90%; /* Se reduce aún más el tamaño para pantallas pequeñas */
+    max-width: 500px;
+  }
+
+  .subcontent__events {
+    flex-direction: column; /* Los elementos se alinean en columna para mayor espacio */
+    margin: 20px;
+  }
+
+  .events__texto {
+    margin: 20px 0;
+  }
+
+  .titulo__texto, .subtitulo__texto {
+    text-align: center; /* Centrar los textos en móviles */
+    font-size: 24px; /* Ajustar el tamaño de los textos */
+  }
+
+  .parrafo__texto {
+    font-size: 16px; /* Reducir tamaño del párrafo para móviles */
+  }
 }
