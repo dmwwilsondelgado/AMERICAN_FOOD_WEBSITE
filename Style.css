@@ -35,19 +35,19 @@ body{
 
 @media (max-width: 768px) {
     .header__container {
-        flex-direction: column;
-        align-items: flex-start;
+     flex-direction: column;
+     align-items: flex-start;
      
     }
     .header__left {
-        margin-bottom: 10px;
+     margin-bottom: 10px;
     }
   
     .promo {
-        grid-template-columns: 1fr;
-        text-align: start;
-        align-items: flex-start;
-        margin: 0;
+     grid-template-columns: 1fr;
+     text-align: start;
+     align-items: flex-start;
+     margin: 0;
     }
     .header__nav-list{
       display: inline-block;
@@ -55,7 +55,7 @@ body{
     }
   
     .promo__title-main {
-        font-size: 5rem;
+      font-size: 5rem;
     }
   
     .promo__title-week {
@@ -86,8 +86,8 @@ body{
     }
   
     .promo_publicidad-imgBurguer {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     .promotion__container {
       display: flex;
@@ -161,7 +161,7 @@ body{
       }
   }
   
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     .header__container {
         padding: 10px;
     }
@@ -171,9 +171,9 @@ body{
     }
   
     .promo__title-week {
-        font-size: 2rem;
-        justify-content: center;
-        align-items: center;
+      font-size: 2rem;
+      justify-content: center;
+      align-items: center;
     }
     .circle {
       height: 80px;
@@ -191,14 +191,14 @@ body{
     }
   
     .promo__price-text2 {
-        font-size: 0.15rem;
+      font-size: 0.15rem;
     }
   
     .promo__price-subtext {
-        font-size: 1rem;
-        align-items: center;
-        margin-top: -10px;
-        padding: 10px;
+      font-size: 1rem;
+      align-items: center;
+      margin-top: -10px;
+      padding: 10px;
     }
   
     .promo_publicidad-imgBurguer {
@@ -352,33 +352,29 @@ body{
   }
 
 
-
-
-
-/* Para pantallas grandes (por ejemplo, de escritorio) */
 @media (min-width: 1024px) {
-    .image__burger {
-      width: 700px; /* Se mantiene el tamaño original en pantallas grandes */
-    }
-  }
+ .image__burger {
+  width: 700px;
+ }
+}
   
-  /* Para tabletas (pantallas medianas) */
-  @media (max-width: 1023px) and (min-width: 768px) {
+
+@media (max-width: 1023px) and (min-width: 768px) {
+.image__burger {
+  width: 80%; 
+  max-width: 600px;
+ }
+}
+
+
+@media (max-width: 767px) {
     .image__burger {
-      width: 80%; /* Reducción del tamaño de la imagen para pantallas más pequeñas */
-      max-width: 600px;
-    }
-  }
-  
-/* Para móviles (pantallas pequeñas) */
- @media (max-width: 767px) {
-    .image__burger {
-      width: 90%; /* Se reduce aún más el tamaño para pantallas pequeñas */
+      width: 90%; 
       max-width: 500px;
     }
   
     .subcontent__events {
-      flex-direction: column; /* Los elementos se alinean en columna para mayor espacio */
+      flex-direction: column; 
       margin: 20px;
     }
   
@@ -387,23 +383,16 @@ body{
     }
   
     .titulo__texto, .subtitulo__texto {
-      text-align: center; /* Centrar los textos en móviles */
-      font-size: 24px; /* Ajustar el tamaño de los textos */
+      text-align: center; 
+      font-size: 24px; 
     }
   
     .parrafo__texto {
-      font-size: 16px; /* Reducir tamaño del párrafo para móviles */
+      font-size: 16px; 
     }
  }
   
-
-
-
-
-
-
-
-  @media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
     .info__hamburguer {
       flex-direction: column;
       justify-content: flex-start;
@@ -512,7 +501,6 @@ body{
       font-size: 1.3rem;
       text-align: center;
     }
-  
     .social-icons {
       margin-top: 250px;
       margin-right: 25px;
